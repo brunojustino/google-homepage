@@ -1,0 +1,142 @@
+:root{
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-rows: 50px 6fr 2fr 6fr 1fr;
+    height: 100vh;
+    row-gap: 10px;
+    align-items: center;
+    align-content: space-between;
+    grid-template-areas: 
+    "header"
+    "logo"
+    "search"
+    "offered"
+    "footer"    ;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+}
+
+header ul{
+    display: flex;
+    justify-self: end;
+    align-self: center;
+    list-style: none;
+    padding: 1%;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+header ul li{
+    padding: 10px;
+}
+
+.logo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+
+.form{
+    grid-area: search;
+    align-self: start;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 10%; */
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.form input[type=text] {
+    /* grid-column: span 2; */
+    align-self: center;
+    
+}
+
+.container-flex{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.form input[type=submit] {
+    /* justify-self: center; */
+    align-self: center;
+    justify-self: center;
+}
+
+.offered{
+    grid-area: offered;
+    display: grid;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.offered p {
+    align-self: start;
+    justify-self: center;
+}
+
+footer{
+    grid-area: footer;
+    display: grid;
+    max-width: 100%;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+footer p {
+    align-self: center;
+    padding-left: 10px;
+}
+
+.footer-items{
+    max-width: 100%;
+    border-top: 1px solid gray;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-items ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    padding: 10px;
+}
+.footer-items ul .front{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+
+}
+.footer-items ul .end{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+
+.footer-items ul li{
+    padding: 10px;
+}
