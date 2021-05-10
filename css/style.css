@@ -54,10 +54,13 @@ header ul{
     padding: 1%;
     justify-content: flex-end;
     align-content: center;
+    margin-top: 2%;
+    
 }
 
 header ul li{
-    padding: 10px;
+    padding: 12px;
+    align-self: center;
 }
 
 .dots{
@@ -66,8 +69,11 @@ header ul li{
     background-color: #fff;
     background-image: url("../images/dots.png");
     background-position: -132px -38px;
-    margin-top: 6px;
     opacity: 0.5;
+}
+
+.logged img {
+    padding-top: 10px;
 }
 
 .logo{
