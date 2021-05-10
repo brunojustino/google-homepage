@@ -26,7 +26,6 @@ a:hover, a:active {
     display: grid;
     grid-template-rows: 50px 6fr 2fr 6fr 1fr;
     height: 100vh;
-    row-gap: 10px;
     align-items: center;
     align-content: space-between;
     grid-template-areas: 
